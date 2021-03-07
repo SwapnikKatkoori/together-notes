@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="contactForm.css">
+    <title>TogetherNotes</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.png">
+
+</head>
+<body> 
+    <nav class="fixed w-full z-30 top-0 text-white">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="index.html">
+            <!--Icon from: http://www.potlabicons.com/ -->
+            <img class="h-8 fill-current inline" src="assets/logo.png">
+                <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
+            TogetherNotes
+            </a>
+        </div>
+        </div>
+    </nav>
+
+    <div class="mb-4 pt-24">
+        <form id="contactForm" class="bg-white rounded px-8 pt-6 pb-8 mb-4" action="https://formspree.io/f/xeqpyjpq" method="POST">
+            <br>
+                <h1 class="block text-gray-700 font-bold mb-2 text-xl text-center">Support</h1>
+            <br>
+            <div class="block text-gray-700 text-sm font-bold mb-2 text-left">
+                <label> Name: </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="exampleFormControlInput1" name="name">
+            </div>
+            <div class="block text-gray-700 text-sm font-bold mb-2 text-left">
+                <label> E-mail: </label>
+                <input placeholder="name@example.com" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" type="email" name="_replyto">
+            </div>
+            <div class="block text-gray-700 text-sm font-bold mb-2 text-left">
+                <label>Problem Area:</label>
+                <select name="area" class="border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+                    <option value="landingPage">Landing page issue</option>
+                    <option value="install">Installation</option>
+                    <option value="payment">Payment</option>
+                    <option value="bug">Bug in extension</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="block text-gray-700 text-sm font-bold mb-2 text-left">
+                <label> Problem description: </label>
+                <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+            </div>
+            <!-- your other form fields go here -->
+
+            <div class="flex items-center justify-between">
+                <button id="submit"
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                    <i class="fab"></i> Send
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

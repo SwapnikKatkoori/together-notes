@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(90deg, #ad9cc0 0%, #ee1148 100%);
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    display: table;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input, select, label {
+    display:block;
+    margin: auto;
+    font-family:Arial;
+    font-size: large;
+}
+
+
+label{
+    font-family:Arial;
+    font-size: large;
+    font-weight: 200;
+}
+
+textarea{
+    display:block;
+    margin: auto;
+}
+
+#contactForm{
+    padding-top: 30px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+
+}
+
+#size{
+    height: auto;
+}
